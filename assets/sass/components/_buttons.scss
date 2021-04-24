@@ -1,0 +1,47 @@
+// Botones info principal
+
+.contenido__button button{
+    color: $white;
+    background-color: $gris;
+    padding: 0.2em 1.6em;
+    border-radius: 20px;
+    margin: 1em 0;
+    margin-right: 1.5em;
+    &:hover{
+        background-color: $negro;
+    }
+    &:focus{
+        color: $salmon;
+    }
+}
+
+// Botones pagina siguiente
+
+.page-buttons {
+    
+    button{
+        background-color: $white;
+        font-size: $medium;
+        font-weight: 500;
+        margin:1em 0.9px;
+        padding: 0.2em 1em;
+        &:hover{
+            background-color: $gris;
+            color: $white;
+        }
+        &:focus{
+            color: $salmon;
+        }
+    }
+    &--anterior{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    &--siguiente{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+}
+
+

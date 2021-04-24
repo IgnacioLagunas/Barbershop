@@ -1,0 +1,81 @@
+// Media queries
+
+
+@media (max-width: 990px){
+    .Naomi{
+        &-contenedor{
+            justify-content: center;
+        }
+        &__info{
+            flex-direction: column;
+            margin-right: 0;
+            align-self: center;
+            
+            &__img{
+                margin-right: 0;
+                margin-bottom: 1.5em;
+
+                img{
+                    width:230px;
+                }
+            }
+            
+            &__name{
+                text-align: center;
+            }
+            
+        }
+        &__text{
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 800px){
+    
+    .header__title h1{
+        font-size: 50px;
+        
+    }
+    
+    .contenido__button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px){
+    
+    header{
+        .header__title{
+            width: 70%;
+    
+            h1{    
+                font-size: 40px;
+            }
+        }
+    }
+    .contenido__button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        button{
+            min-width: 10rem;
+            max-width: 10rem;
+        }
+    }
+
+    .Naomi__info__img img{
+        width: 180px;
+    }
+    .page-buttons div button{
+        font-size: $small;
+        font-weight: 600;
+    }
+    .footer__logo img{
+        width:80px;
+    }
+         
+}

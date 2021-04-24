@@ -1,0 +1,25 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: $light;
+}
+
+h1,
+h4,
+h6{
+    font-family: 'Playfair Display', serif;
+}
+h1,
+h4{
+    font-weight: $bold;
+    font-style: italic;
+}
+h1{ font-size: $xxl;}
+nav,
+button{
+    font-size: $medium;
+}
+p, button{
+    font-size: $small;
+    line-height: 2.5em;
+    color: $gris;
+}

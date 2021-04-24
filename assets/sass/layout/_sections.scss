@@ -1,0 +1,56 @@
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+// Seccion info principal
+h6{
+    margin-bottom: 2em;
+}
+.contenido p{
+    margin-bottom: 4em;
+}
+
+//Seccion Naomi
+
+.Naomi{
+    margin: 4em 0;
+    &__contenedor{
+        justify-content: space-between;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-right: 4em;
+
+        &__img{
+
+            margin-right: 3em;
+            img{
+                width: 200px;
+                border-radius: 200px;
+                
+            } 
+
+        }
+        &__name{
+            width: 150px;
+            h4{
+                letter-spacing: 1.5px;
+                margin-bottom:1em;
+            }
+            p{
+                font-size: $large;
+                line-height: 0.8em;
+                color: $salmon;
+            }
+        }
+    }
+}
+// Seccion paginas siguientes
+
+.page-buttons{
+    padding: 2rem 0;
+    background-color: $light-gray;  
+    
+}

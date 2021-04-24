@@ -1,2 +1,278 @@
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h4,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h4 {
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+nav,
+button {
+  font-size: 16px;
+}
+
+p, button {
+  font-size: 12px;
+  line-height: 2.5em;
+  color: #6C6E70;
+}
+
+.navbar {
+  background-color: #121619;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar__logo img {
+  width: 4em;
+}
+.navbar li a {
+  color: #FFF;
+  font-size: 16px;
+}
+.navbar li a:hover {
+  color: #D1D1D1;
+}
+.navbar li a:focus {
+  color: #E56353;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon i {
+  color: #FFF;
+  font-size: 1.2em;
+}
+.navbar-toggler .navbar-toggler-icon i:hover {
+  opacity: 0.2;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../images/post-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  color: #FFF;
+  text-align: center;
+}
+header .header__title {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+footer {
+  background-color: #121619;
+  padding: 2.5rem 0;
+}
+
+.footer__logo {
+  justify-content: center;
+}
+.footer__logo img {
+  width: 150px;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h6 {
+  margin-bottom: 2em;
+}
+
+.contenido p {
+  margin-bottom: 4em;
+}
+
+.Naomi {
+  margin: 4em 0;
+}
+.Naomi__contenedor {
+  justify-content: space-between;
+}
+.Naomi__info {
+  display: flex;
+  align-items: center;
+  margin-right: 4em;
+}
+.Naomi__info__img {
+  margin-right: 3em;
+}
+.Naomi__info__img img {
+  width: 200px;
+  border-radius: 200px;
+}
+.Naomi__info__name {
+  width: 150px;
+}
+.Naomi__info__name h4 {
+  letter-spacing: 1.5px;
+  margin-bottom: 1em;
+}
+.Naomi__info__name p {
+  font-size: 18px;
+  line-height: 0.8em;
+  color: #E56353;
+}
+
+.page-buttons {
+  padding: 2rem 0;
+  background-color: #D1D1D1;
+}
+
+@media (max-width: 990px) {
+  .Naomi-contenedor {
+    justify-content: center;
+  }
+  .Naomi__info {
+    flex-direction: column;
+    margin-right: 0;
+    align-self: center;
+  }
+  .Naomi__info__img {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+  .Naomi__info__img img {
+    width: 230px;
+  }
+  .Naomi__info__name {
+    text-align: center;
+  }
+  .Naomi__text {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header__title h1 {
+    font-size: 50px;
+  }
+
+  .contenido__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  header .header__title {
+    width: 70%;
+  }
+  header .header__title h1 {
+    font-size: 40px;
+  }
+
+  .contenido__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenido__button button {
+    min-width: 10rem;
+    max-width: 10rem;
+  }
+
+  .Naomi__info__img img {
+    width: 180px;
+  }
+
+  .page-buttons div button {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .footer__logo img {
+    width: 80px;
+  }
+}
+.contenido__button button {
+  color: #FFF;
+  background-color: #6C6E70;
+  padding: 0.2em 1.6em;
+  border-radius: 20px;
+  margin: 1em 0;
+  margin-right: 1.5em;
+}
+.contenido__button button:hover {
+  background-color: #121619;
+}
+.contenido__button button:focus {
+  color: #E56353;
+}
+
+.page-buttons button {
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1em 0.9px;
+  padding: 0.2em 1em;
+}
+.page-buttons button:hover {
+  background-color: #6C6E70;
+  color: #FFF;
+}
+.page-buttons button:focus {
+  color: #E56353;
+}
+.page-buttons--anterior {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.page-buttons--siguiente {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

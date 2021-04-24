@@ -1,0 +1,36 @@
+.navbar{
+
+    background-color: $negro;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    &__logo img{
+        width: 4em;
+    }
+    li a{
+        color: $white;
+        font-size: $medium;
+    }
+    li a:hover{
+        color: $light-gray;
+    }
+    li a:focus{
+        color: $salmon;
+    }
+    &-toggler{
+        border: none;
+        
+        .navbar-toggler-icon i{
+            color: $white;
+            font-size: 1.2em;
+            &:hover{
+                opacity: .2;
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+        }
+        
+        
+    }
+}
