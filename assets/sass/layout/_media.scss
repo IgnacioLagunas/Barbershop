@@ -46,7 +46,9 @@
 }
 
 @media (max-width: 550px){
-    
+    .navbar__logo img{
+        width: 3em;
+    }
     header{
         .header__title{
             width: 70%;
@@ -54,6 +56,9 @@
             h1{    
                 font-size: 40px;
             }
+        }
+        .header__icon i{
+            font-size: 40px;
         }
     }
     .contenido__button{
